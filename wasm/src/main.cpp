@@ -7,8 +7,7 @@ using namespace emscripten;
 // 创建一个大约 400MB 的静态数组
 // 400MB = 400 * 1024 * 1024 bytes = 419,430,400 bytes
 // 使用 char 数组，每个 char 1 byte
-// static const int LARGE_ARRAY_SIZE = 419430400; // 400MB
-static const int LARGE_ARRAY_SIZE = 219430400; // 400MB
+static const int LARGE_ARRAY_SIZE = 419430400; // 400MB
 
 // 使用全局数组并强制初始化以确保包含在 WASM 中
 __attribute__((used)) static char large_data_buffer[LARGE_ARRAY_SIZE] = {1}; // 初始化第一个元素为1，其余为0
