@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# WebAssembly build artifacts
+wasm/build/
+wasm/dist/
+*.wasm
+*.js.map
+
+# Optional npm cache directory
+.npm
